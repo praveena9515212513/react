@@ -1,0 +1,21 @@
+under src create components folder
+in that create Appfun.js file
+function F1(){
+    return(
+        <div>
+            <p>Hello</p>
+            <h1>Function</h1>
+        </div>
+    ) 
+}
+export default F1;
+
+in index.js include this
+import F1 from './components/Appfun.js';
+root.render(
+  <React.StrictMode>
+    {/* <App />
+    <App1></App1> */}
+    <F1/>
+  </React.StrictMode>
+);
