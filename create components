@@ -1,0 +1,20 @@
+npx create-react-app hello-app
+cd hello-app
+npm start
+
+under src folder
+create components folder
+create greet.js file
+import React from "react"
+class App1 extends React.Component{
+    render(){
+        // return <h1>My class component</h1>
+        return <h1>Today date:</h1>
+    }
+}
+export default App1;
+
+in index.js include these statements
+import App1 from './components/greet.js';
+
+use <App1></App1> under <App/>
