@@ -1,0 +1,30 @@
+npx create-react-app hello-app
+cd hello-app
+npm start
+under src create components folder create greet.js file
+import React from "react"
+class App1 extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            name:'Praveena Bhimani'
+        }
+    }
+    change(){
+        this.setState({
+            name : 'Praveena'
+        })
+    }
+    render(){
+        // return <h1>My class component</h1>
+        return (
+            <div>
+            <h1>RVR & JC COLLEGE OF ENGINEERING</h1>
+            <p>{this.state.name}</p>
+            <button onClick={()=>this.change()}>Click me</button>
+            </div> 
+        )
+
+    }
+}
+export default App1;
